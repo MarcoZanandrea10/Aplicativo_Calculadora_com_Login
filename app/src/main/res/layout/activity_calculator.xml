@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operando A:"
+        android:textColor="#1B5E20"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editOperandoA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operando B:"
+        android:textColor="#1B5E20"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editOperandoB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btnSoma"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:textColor="#2E7D32" />
+
+        <Button
+            android:id="@+id/btnSubtracao"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="-"
+            android:textColor="#2E7D32"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnMultiplicacao"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="×"
+            android:textColor="#2E7D32"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnDivisao"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="÷"
+            android:textColor="#2E7D32"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:background="#2E7D32"
+        android:text="&lt;resultado&gt;"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnCompartilhar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compartilhar resultado"
+        android:textColor="#2E7D32"
+        android:visibility="gone" />
+
+</LinearLayout>
